@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ícones do Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="/projeto/fontawesome-free-6.4.0-web/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="/projeto/css/style.css">
+
+    <title>ECOlógica</title>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <a href="/projeto/html/homepage.html"><img src="/projeto/img/img_homepage/ECOlogo.png"></a>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="/projeto/html/homepage.html">Home</a></li>
+                <li><a href="/projeto/html/sobre.html">Sobre</a></li>
+                <li><a href="/projeto/html/residuos.html">Tipos de Resíduos</a></li>
+                <li><a href="/projeto/html/cooperativas.html">Cooperativas</a></li>
+                <li><a href="/projeto/html/PNRS.html">Lei PNRS</a></li>
+            </ul>
+        </div>
+        <div class="buscar">
+            <form>
+                <input type="text" placeholder="Buscar...">
+                <button class="buscarbtn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+        <div class="sessao">
+            <button class="sessaobtn" type="button"><i class="fa-solid fa-circle-user"></i></button>
+        </div>
+        
+        <div class="modal">
+            <h1 class="titulo">Login/Registro</h1>
+            <form action="#">
+                <div class="campos">
+                    <input type="text" name="email" placeholder="E-mail">
+                    <input type="password" name="senha" placeholder="Senha">
+                    <a href="#" class="esqueci-senha">Esqueci minha senha</a>
+                </div>
+                <input type="submit" value="Entrar" id = "entrarBtn">
+            </form>
+            <button class="fecharmodal" type="button"><strong>X</strong></button>
+        </div>
+        </header>
+
+    <!-- Carrossel de Notícias -->
+    <div class="carrossel">
+        <h1 class="titulo-carrossel"> Em Destaque</h1>
+        <i class="fa-solid fa-caret-left prev"></i>
+        <i class="fa-solid fa-caret-right next"></i>
+
+        <div class="conteudo">
+            <div class="noticia">
+                <a href="noticia.html"><img src="/projeto/img/img_homepage/imglixo.png" alt="" class="img-noticia"></a>
+                <div class="info-noticia">
+                    <h4><a href="noticia.html">Lixo — Um desafio para a preservação do meio ambiente</a></h4>
+                </div>
+            </div>
+            <div class="noticia">
+                <a href="noticia.html"><img src="/projeto/img/img_homepage/imglixoeletronico.png" alt="" class="img-noticia"></a>
+                <div class="info-noticia">
+                    <h4><a href="noticia.html">Brasil é o quinto maior produtor de lixo eletrônico no mundo</a></h4>
+                </div>
+            </div>
+            <div class="noticia">
+                <a href="noticia.html"><img src="/projeto/img/img_homepage/imgreciclagem.png" alt="" class="img-noticia"></a>
+                <div class="info-noticia">
+                    <h4><a href="noticia.html">Reciclagem — Importância e impactos no meio ambiente</a></h4>
+                </div>
+            </div>
+            <div class="noticia">
+                <a href="noticia.html"><img src="/projeto/img/img_homepage/imgindicebrasil.png" alt="" class="img-noticia"></a>
+                <div class="info-noticia">
+                    <h4><a href="noticia.html">Segundo Abrelpe, o índice de reciclagem no Brasil é de apenas 4%</a></h4>
+                </div>
+            </div>
+            <div class="noticia">
+                <a href="noticia.html"><img src="/projeto/img/img_homepage/imgplasticos.png" alt="" class="img-noticia"></a>
+                <div class="info-noticia">
+                    <h4><a href="noticia.html">Lixo Plástico — Quais os malefícios causados e como reduzir?</a></h4>
+                </div>
+            </div>
+            <div class="noticia">
+                <a href="noticia.html"><img src="/projeto/img/img_homepage/imgaterro.png" alt="" class="img-noticia"></a>
+                <div class="info-noticia">
+                    <h4><a href="noticia.html"> Saiba quais as vantagens e desvantagens dos aterros sanitários</a></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+    <div class="main">
+        <h1 class="titulo-noticias">Notícias</h1>
+
+        <div class="cards">
+            <img src="/projeto/img/img_homepage/imgslz.png">
+            <div class="texto">
+                <h4>Motorista é flagrado despejando lixo próximo a rio no Olho d'Água, em São Luís</h4>
+                <p>Flagrante foi feito por uma pessoa que passava pelo local.</p>
+            </div>
+        </div>
+
+        <div class="cards">
+            <img src="/projeto/img/img_homepage/imgacre.png">
+            <div class="texto">
+                <h4>Acre é o segundo estado do Norte com menor cobertura de coleta de lixo por domicílio</h4>
+                <p>Estado está abaixo do percentual nacional, que é de 86%. Pesquisa do IBGE mostra ainda que o Acre está em quarto lugar da região Norte no percentual de domicílios que tem a rede geral como principal fonte de abastecimento de água.</p>
+            </div>
+        </div>
+
+        <div class="cards">
+            <img src="/projeto/img/img_homepage/imgroraima.png">
+            <div class="texto">
+                <h4>Empresário joga no lixo 900 toneladas de salsicha em Roraima após Venezuela barrar exportação</h4>
+                <p>Das 900 toneladas, 616 foram incineradas e as outras 284 foram descartadas no aterro sanitário de Boa Vista. Governo venezuelano barrou a entrada de alimentos brasileiros no país vizinho.</p>
+            </div>
+        </div>
+
+        <div class="cards">
+            <img src="/projeto/img/img_homepage/imgestradarural.png">
+            <div class="texto">
+                <h4>Estrada rural é alvo de descarte irregular de lixo na Vila Furquim, em Presidente Prudente</h4>
+                <p>Secretário municipal de Meio Ambiente, Fernando Luizari Gomes, atribuiu situação à falta de educação ambiental dos moradores.</p>
+            </div>
+        </div>
+
+        <div class="cards">
+            <img src="/projeto/img/img_homepage/imgmedicamentos.png">
+            <div class="texto">
+                <h4>Medicamentos vencidos: descarte em lixo comum pode trazer riscos à saúde e prejuízos ao meio ambiente; veja como fazer</h4>
+                <p>No Distrito Federal, farmácias são obrigadas por lei a receber remédios vencidos de clientes e encaminhá-los para descarte adequado. Empresa contratada pelo GDF faz coleta dos produtos, transporte e tratamento; saiba como funciona.</p>
+            </div>
+        </div>
+
+        <div class="cards">
+            <img src="/projeto/img/img_homepage/imgteresina.png">
+            <div class="texto">
+                <h4>Prefeitura de Teresina renova contrato para coleta de lixo de forma emergencial; licitação durará 6 meses</h4>
+                <p>O acordo com a empresa Litucera, que já atuava na coleta de lixo na capital, foi encerrado no sábado (9).</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <!-- Script do carrossel Slick -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $('.conteudo').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            nextArrow: $('.next'),
+            prevArrow: $('.prev'),
+        });
+        const sessaoBtn = document.querySelector('.sessaobtn');
+const modal = document.querySelector('.modal');
+const fecharModalBtn = document.querySelector('.fecharmodal');
+
+sessaoBtn.addEventListener('click', () => {
+    modal.classList.add('open');
+});
+
+fecharModalBtn.addEventListener('click', () => {
+    modal.classList.remove('open');
+});
+
+document.addEventListener('click', (event) => {
+    if (event.target === modal) {
+        modal.classList.remove('open');
+    }
+});
+
+    </script>
+</body>
+</html>

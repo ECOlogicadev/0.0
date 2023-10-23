@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/projeto/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/projeto/css/sobre.css">
+    <title>Sobre</title>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+        <a href="/projeto/html/homepage.html"><img src="/projeto/img/img_homepage/ECOlogo.png"></a>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="/projeto/html/homepage.html">Home</a></li>
+            <li><a href="/projeto/html/sobre.html">Sobre</a></li>
+            <li><a href="/projeto/html/residuos.html">Tipos de Resíduos</a></li>
+            <li><a href="/projeto/html/cooperativas.html">Cooperativas</a></li>
+            <li><a href="/projeto/html/PNRS.html">Lei PNRS</a></li>
+        </ul>
+    </div>
+    <div class="buscar">
+        <form>
+            <input type="text" placeholder="Buscar...">
+            <button class="buscarbtn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </div>
+    <div class="sessao">
+        <button class="sessaobtn" type="button"><i class="fa-solid fa-circle-user"></i></button>
+    </div>
+    
+    <div class="modal">
+        <h1 class="titulo">Login/Registro</h1>
+        <form action="#">
+            <div class="campos">
+                <input type="text" name="email" placeholder="E-mail">
+                <input type="password" name="senha" placeholder="Senha">
+                <a href="#" class="esqueci-senha">Esqueci minha senha</a>
+            </div>
+            <input type="submit" value="Entrar" id = "entrarBtn">
+        </form>
+        <button class="fecharmodal" type="button"><strong>X</strong></button>
+    </div>
+    </header>
+
+<div class="texto-ecologica">
+  <h1> O que É a Ecológica?</h1>
+  <p id="apresentacao">Bem-vindo à Ecológica - uma plataforma dedicada a fazer a diferença no mundo ao promover a consciência ambiental e a sustentabilidade. Somos mais do que apenas um projeto; somos uma comunidade apaixonada que acredita em um futuro melhor para o nosso planeta.<br><br>
+
+    A Ecológica nasceu da nossa profunda preocupação com as questões ambientais globais. Estamos aqui para educar, inspirar e capacitar todos a agir em prol do meio ambiente. Nosso objetivo é proporcionar uma fonte confiável de informações sobre reciclagem, práticas sustentáveis e notícias ambientais atuais.<br>
+    
+    Acreditamos que cada pequeno passo conta. Queremos incentivar ações individuais e coletivas que levem a um impacto positivo. Por meio de artigos informativos, vídeos educacionais e guias práticos, oferecemos recursos valiosos para que todos possam fazer escolhas conscientes no seu dia a dia.<br><br>
+    Na Ecológica, valorizamos a colaboração e a diversidade de ideias. Encorajamos debates construtivos e compartilhamento de experiências. Juntos, podemos criar uma onda de mudança que tornará nosso mundo mais verde e sustentável para as futuras gerações.<br><br>
+
+Explore nosso site, aprenda sobre reciclagem, descubra maneiras de reduzir seu impacto ambiental e, acima de tudo, junte-se a nós nessa jornada. Cada ação conta, e com sua ajuda, podemos fazer a diferença.<br><br></p>
+<p id = "slogan"><strong>Seja bem-vindo à Ecológica - onde a sustentabilidade é mais do que uma escolha, é um estilo de vida.</strong></p>
+</div>  
+
+  <div class="sobre-nos">
+    <h1>Quem Somos?</h1>
+    
+    <div class="membros">
+      <div class="membro">
+        <img src="/projeto/img/img_sobre/lucas.png" alt="Membro 1">
+        <h3>Lucas Jader</h3>
+        <p>Scrum Master e Programador</p>
+      </div>
+
+      <div class="membro">
+        <img src="/projeto/img/img_sobre/joao.png" alt="Membro 2">
+        <h3>João Emanuel</h3>
+        <p>Programador, Web Designer e Redator</p>
+      </div>
+
+      <div class="membro">
+        <img src="/projeto/img/img_sobre/ana3.png" alt="Membro 3">
+        <h3>Ana Katarine</h3>
+        <p>Programadora e Redatora</p>
+      </div>
+
+      <div class="membro">
+        <img src="/projeto/img/img_sobre/vinicius.png" alt="Membro 4">
+        <h3>Vinícius Reis</h3>
+        <p>Programador e DBA</p>
+      </div>
+
+      <div class="membro">
+        <img src="/projeto/img/img_sobre/Kauan.png" alt="Membro 5">
+        <h3>Ayrton Kauan</h3>
+        <p>Programador e Designer Gráfico</p>
+      </div>
+
+      <div class="membro">
+        <img src="/projeto/img/img_sobre/erick.png" alt="Membro 6">
+        <h3>Erick Ricardo</h3>
+        <p>Programador e Pesquisador</p>
+      </div>
+
+      <div class="membro">
+        <img src="/projeto/img/img_sobre/ian.png" alt="Membro 7">
+        <h3>Ian Oliveira</h3>
+        <p>Programador e Designer Gráfico</p>
+      </div>
+    </div>
+
+</body>
+<script>  
+
+  const sessaoBtn = document.querySelector('.sessaobtn');
+      const modal = document.querySelector('.modal');
+      const fecharModalBtn = document.querySelector('.fecharmodal');
+      
+      sessaoBtn.addEventListener('click', () => {
+          modal.classList.add('open');
+      });
+      
+      fecharModalBtn.addEventListener('click', () => {
+          modal.classList.remove('open');
+      });
+      
+      document.addEventListener('click', (event) => {
+          if (event.target === modal) {
+              modal.classList.remove('open');
+          }
+      });
+      
+  </script>
+</html>
